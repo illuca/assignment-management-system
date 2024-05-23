@@ -1,1 +1,4 @@
 /front-end/node_modules/
+**/*.DS_Store
+/back-end/upload/*
+/front-end/dist_electron

@@ -78,6 +78,18 @@ CREATE TABLE `teacher` (
   `password` varchar(32) NOT NULL,
   PRIMARY KEY (`teacher_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+
+CREATE TABLE `file` (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL COMMENT '文件名',
+  `md5` varchar(32) DEFAULT NULL COMMENT 'MD5值',
+  `path` varchar(100) NOT NULL COMMENT '文件路径',
+  `upload_time` datetime(3) NOT NULL COMMENT '上传时间',
+  `ext` varchar(255) DEFAULT NULL COMMENT '文件后缀名',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=65 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 ```
 
 
@@ -145,3 +157,14 @@ npm run serve
 作业点评：
 
 ![image-20240523184122750](https://p.ipic.vip/5mjkdj.png)
+
+
+
+## 多端运行
+
+```shell
+cd $project/front-end
+npm run electron:serve # 不支持arm64
+```
+
+![image-20240523191059202](https://p.ipic.vip/mkq7jo.png)
