@@ -70,7 +70,7 @@ CREATE TABLE `student_homework_file` (
   `file_name` varchar(100) NOT NULL,
   `file_path` varchar(100) NOT NULL,
   PRIMARY KEY (`student_homework_file_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_IN	CREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 CREATE TABLE `teacher` (
   `teacher_id` int NOT NULL,
@@ -78,8 +78,6 @@ CREATE TABLE `teacher` (
   `password` varchar(32) NOT NULL,
   PRIMARY KEY (`teacher_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
-
 
 CREATE TABLE `file` (
   `id` bigint NOT NULL AUTO_INCREMENT,
