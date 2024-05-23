@@ -1,0 +1,43 @@
+{
+  "name": "homework-management-system-front-end",
+  "productName": "多架构的文件发布与上传系统",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "electron:build": "vue-cli-service electron:build",
+    "electron:serve": "vue-cli-service electron:serve",
+    "postinstall": "electron-builder install-app-deps",
+    "postuninstall": "electron-builder install-app-deps"
+  },
+  "main": "background.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "core-js": "^3.6.5",
+    "css-loader": "^3.6.0",
+    "element-ui": "^2.13.2",
+    "file-loader": "^2.0.0",
+    "font-awesome": "^4.7.0",
+    "js-md5": "^0.7.3",
+    "node-sass": "^4.14.1",
+    "plupload": "^2.3.9",
+    "sass-loader": "^8.0.2",
+    "vue": "^2.6.11",
+    "vue-resource": "^1.5.3",
+    "vue-router": "^3.3.4",
+    "vue-style-loader": "^4.1.2",
+    "xmlhttprequest": "^1.8.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.4.0",
+    "@vue/cli-service": "~4.4.0",
+    "electron": "^13.1.1",
+    "electron-builder": "^22.10.5",
+    "electron-devtools-installer": "^3.1.0",
+    "electron-packager": "^15.2.0",
+    "vue-cli-plugin-electron-builder": "~2.0.0",
+    "vue-template-compiler": "^2.6.11",
+    "vuex": "^3.4.0"
+  }
+}
